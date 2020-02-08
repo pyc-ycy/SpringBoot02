@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @SpringBootApplication
 public class Ch744Application {
+    //后台数据控制
     @RequestMapping(value = "/search", produces = {MediaType.APPLICATION_JSON_VALUE})
     public Person search(String personName){
         return new Person(personName,32,"guangdong");
